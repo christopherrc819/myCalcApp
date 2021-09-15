@@ -1,0 +1,122 @@
+:root {
+  --bodyWhite: #ebebeb;
+  --bodyBlack: #333333;
+  --coolCyan: #3af8d3;
+  --coolRed: #cc5e62;
+  --darkBackground: #202020;
+  --darkForeground: #282828;
+  --lightModeClrForeground: #f9f9f9;
+  --white: #ffffff;
+}
+
+.redBtn {
+  color: var(--coolRed);
+}
+.cyanBtn {
+  color: var(--coolCyan);
+}
+.numberBtns {
+  color: var(--white);
+}
+.darkModeClrForeground {
+  background-color: var(--darkForeground);
+}
+.lightModeClrForeground {
+  background-color: var(--lightModeClrForeground);
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bodyBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+.calculator-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202020;
+  width: 100vw;
+  height: 812px;
+  max-width: 415px;
+  border-radius: 35px;
+  padding: 20px;
+  margin: 5% auto
+}
+@media only screen and (max-width: 470px) {
+  .calculator-app {
+    height: 718px;
+    margin: 0 auto;
+  }
+}
+
+.darkModeSection {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+.darkModeSection > i {
+  font-size: 1.5rem;
+}
+.calc-grid > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  outline: none;
+}
+.calc-grid > button:hover {
+  opacity: 0.5;
+}
+
+
+.span-two {
+  grid-column: span 2;
+}
+.calc-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 85px);
+}
+.output-screen {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 5px;
+  text-align: right;
+  color: var(--white);
+}
+.previous-operand {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.current-operand {
+  font-size: 3rem;
+}
