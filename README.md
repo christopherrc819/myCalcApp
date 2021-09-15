@@ -26,8 +26,8 @@ Build a calculator app using Vanilla JS, CSS3 and HTML5. Build dark-mode for app
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [vercel.app](https://my-calc-app-o184e040j-christopherrc819.vercel.app/)
+- gitHub URL: [gitHub](https://github.com/christopherrc819/myCalcApp)
 
 ## My process
 
