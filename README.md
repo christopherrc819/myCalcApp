@@ -19,7 +19,7 @@ Build a calculator app using Vanilla JS, CSS3 and HTML5. Build dark-mode for app
   - use classes and constructor
   - use Number.methods
   - use data-attributes
-  - use switch cases
+  - use switch case for number calculations
   - Apply darkMode to all CSS element
   - use class constructors to organize calculator variables and functions
 
@@ -42,7 +42,7 @@ Used data-attributes to separate JS and CSS selectors.
 - Mobile-first workflow
 
 ### What I learned
-**parseFloat() included entire integer after decimal, parseInt() removes anything after decimal**
+**parseFloat() converts number thats passed into a string**
 ```js
 const prevValue = parseFloat(this.previousOperand);
 const currentValue = parseFloat(this.currentOperand);
