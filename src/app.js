@@ -177,6 +177,6 @@ document.addEventListener('DOMContentLoaded', () => {
     elementBtns.forEach(element => element.classList.add('darkModeClrForeground'))
     console.log('darkModeBtn clicked');
   })
-
+  console.log(this.currentOperand)
 
 })
